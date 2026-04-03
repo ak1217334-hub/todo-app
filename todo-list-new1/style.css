@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(to top,#be9ac9,#0c74cf);
+    /* background-color: #111111; */
+    width: 100vw;
+    height: 100vh;
+}
+
+
+:root{
+    --main-bg-color: linear-gradient(to top,#be9ac9,#0c74cf);
+    --main-btn-color: linear-gradient(to top, rgb(0, 76, 163),rgba(230, 208, 208, 0.877));
+    --text-color:white;
+    --dark-bg-color:  rgb(226, 220, 220);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 70px;
+    margin-left: 60px;
+    color:var(--text-color);
+   
+    
+    
+}
+
+h1 img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+button{
+    
+    background:var(--main-btn-color);
+    /* background-color: #ecebea; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+     color: var(--text-color); 
+    /* color: #333; */
+
+}
+
+button img {
+    width:30px;
+    margin-right: 10px;
+}
+
+.icon-box{
+    width: 50px;
+    height: 50px;
+    background-color:var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50px ;
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+
+.icon-box img{ 
+    cursor: pointer;
+    width: 40px;
+    
+
+}
+
+
+/* 'body' ke sath class likhein taake gradient khatam ho jaye */
+body.dark-theme {
+    background: #222 !important; /* '!important' se purana gradient hat jayega */
+    color: white;
+}
+
+/* Dark mode mein heading ka color */
+body.dark-theme h1 {
+    color: white;
+}
+
+/* Dark mode mein notes ka dabba */
+body.dark-theme .input-box {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-theme{
+    
+    background: #222;
+    color: #fff;
+}
+
+body.dark-theme .input-box {
+    background: #fafafa !important; /* Dark background */
+    color:black !important;       /* White text */
+    border: 1px solid #444;      /* Halka sa border taake dabba nazar aaye */
+}
+
+body.dark-theme button{
+    color: #222;
+    background: #fff;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height:120px;
+    background: white;
+    color: #333;
+    padding: 20px;
+    margin: 20px 40px;
+    outline: none;
+    border-radius: 5px;
+    word-wrap: break-word; /* Lambe lafz agli line par le jaye */
+    overflow-wrap: break-word;
+}
+
+p img{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    
+    
+}
